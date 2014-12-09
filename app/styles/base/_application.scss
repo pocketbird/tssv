@@ -22,10 +22,35 @@
  * ---------------------------------------------------------------------------
  */
 
+body, html {
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  width: 100%;
+}
+
 .header-primary {}
 
 .nav-primary {}
 
-.content-primary {}
+.content-primary {
+  background: url(../images/tssv1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  color: white;
+  font-size: 5em;
+  font-weight: 100;
+  left: 1.5em;
+  opacity: 0.6;
+  position: relative;
+  top: 45%;
+}
 
 .footer-primary {}
