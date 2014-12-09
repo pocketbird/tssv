@@ -58,8 +58,6 @@ body, html {
 
   @include media($tablet-down) {
   	font-size: 2em;
-  	left: 0;
-  	text-align: center;
   }
 }
 
