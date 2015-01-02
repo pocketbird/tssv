@@ -29,9 +29,13 @@ body, html {
   width: 100%;
 }
 
-.header-primary {}
-
-.nav-primary {}
+.header-primary {
+  background: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
 
 .content-primary {
   background: url(../images/tssv3.jpg) no-repeat center center fixed;
@@ -48,13 +52,9 @@ body, html {
   font-size: 5em;
   font-weight: 100;
   left: 1.5em;
-  opacity: 0.6;
+  opacity: 0.8;
   position: relative;
   top: 45%;
-
-  &:hover {
-  	opacity: 0.8;
-  }
 
   @include media($tablet-down) {
   	font-size: 2em;

@@ -5,6 +5,7 @@ $base-font-family: $sans-serif;
 $header-font-family: $base-font-family;
 
 // Sizes
+$base-value: 12px;
 $base-font-size: 1em;
 $base-line-height: $base-font-size * 1.5;
 $unitless-line-height: $base-line-height / ($base-line-height * 0 + 1); // Strip units from line-height: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height#Prefer_unitless_numbers_for_line-height_values
@@ -12,6 +13,7 @@ $header-line-height: $base-font-size * 1.25;
 $base-border-radius: em(3);
 
 // Colors
+$black: #000000;
 $blue: #477DCA;
 $dark-gray: #333;
 $medium-gray: #999;
@@ -19,6 +21,7 @@ $light-gray: #DDD;
 $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
+$white: #FFFFFF;
 
 // Background Color
 $base-background-color: white;
