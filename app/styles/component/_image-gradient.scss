@@ -1,27 +1,27 @@
 .image-gradient-dynamic {
-  $image-gradient-color-top: red; 
+  $image-gradient-color-top: black;
   $transparency-top: .6;
-  $image-gradient-color-bottom: green; 
+  $image-gradient-color-bottom: white;
   $transparency-bottom: .7;
   $vertical-angle: 0deg;
 
-  $image-gradient-color-left: teal; 
+  $image-gradient-color-left: black;
   $transparency-left: .75;
-  $image-gradient-color-right: yellow; 
+  $image-gradient-color-right: white;
   $transparency-right: .8;
   $horizontal-angle: 90deg;
 
   position: relative;
   line-height: 0;
   width: 100%;
-  margin-bottom: $base-line-height;  
+  margin-bottom: $base-line-height;
 
   img {
    width: 100%;
    height: auto;
    position: relative;
    top: 0;
-   left: 0; 
+   left: 0;
   }
 
   .copy {
@@ -43,14 +43,14 @@
   }
 
   .overlay {
-    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top), 
+    @include linear-gradient($vertical-angle, transparentize($image-gradient-color-top, $transparency-top),
       transparentize($image-gradient-color-bottom, $transparency-bottom));
     display: block;
     @include position(absolute, 0px 0px 0px 0px);
 
     &:after {
       content: '';
-      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left), 
+      @include linear-gradient($horizontal-angle, transparentize($image-gradient-color-left, $transparency-left),
         transparentize($image-gradient-color-right, $transparency-right));
       display: block;
       @include position(absolute, 0px 0px 0px 0px);
