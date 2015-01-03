@@ -22,7 +22,10 @@
     <![endif]-->
 
     {% include shared/header.html %}
-    {{ content }}
+    <div class="content-primary image-gradient-dynamic">
+      <div class="overlay"></div>
+      {{ content }}
+    </div>
     {% include shared/footer.html %}
 
     {% include shared/scripts.html %}
