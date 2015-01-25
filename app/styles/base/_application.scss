@@ -61,7 +61,7 @@ body, html {
 .content-primary {
   display: none;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   padding: 4em 2em;
   @include media($desktop) {
     padding: 10em;
