@@ -1,6 +1,23 @@
 .nav-primary {
-  padding: 1em;
   display: inline-block;
+  height: 3.4em;
+  padding: 1em;
+  width: 100%;
+  @include background-opacity($base-link-color, 0.9);
+
+  @include media($tablet) {
+    height: 4em;
+  }
+
+  @include media($desktop-large) {
+    height: 4.2em;
+  }
+
+  ul li {
+    @include media($desktop) {
+      margin: 0 0.5em;
+    }
+  }
 
   ul li:hover {
     border-bottom: 1px solid $white;
@@ -13,13 +30,26 @@
   // Dropdown
   ul ul {
     display: none;
+    padding-top: 1em;
     position: absolute;
-    top: 3.3em;
+    text-align: left;
+    // top: 3.3em;
 
     li {
       display: block;
       float:none;
+      padding-top: 1em;
       position: relative;
+      right: 0.5em;
+      @include background-opacity($base-link-color, 0.9);
+
+      &:first-child {
+        padding-top: 0.3em;
+      }
+
+      &:last-child {
+        padding-bottom: 1em;
+      }
 
       &:hover {
         border-bottom: 0;

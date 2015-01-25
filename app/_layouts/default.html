@@ -11,6 +11,13 @@
 
     {% include shared/styles.html %}
 
+    <!-- CDN Scripts -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- build:js-pre({app,.tmp}) /scripts/jquery.js -->
+    <script src="/vendor/jquery/dist/jquery.js"></script>
+    <!-- endbuild -->
+
     <!-- build:js({app,.tmp}) /scripts/modernizr.js -->
     <script src="/vendor/modernizr/modernizr.js"></script>
     <!-- endbuild -->
@@ -22,9 +29,10 @@
     <![endif]-->
 
     {% include shared/header.html %}
-    <div class="content-primary image-gradient-dynamic">
-      <div class="overlay"></div>
-      {{ content }}
+    <div class="background">
+      <div class="content-primary">
+        {{ content }}
+      </div>
     </div>
     {% include shared/footer.html %}
 

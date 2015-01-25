@@ -23,22 +23,15 @@
  */
 
 body, html {
+  color: $base-font-color;
   height: 100%;
   min-height: 100%;
   min-width: 100%;
   width: 100%;
 }
 
-.header-primary {
-  background: transparent;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.content-primary {
-  background: url(../images/tssv3.jpg) no-repeat center center fixed;
+.background {
+  background: url(../images/tssv3-filter.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,18 +40,59 @@ body, html {
   width: 100%;
 }
 
-.hero {
-  color: white;
-  font-size: 5em;
+.header-primary {
+  background: transparent;
+  font-family: $header-font-family;
+  font-size: 0.3em;
+  letter-spacing: 1px;
+  position: fixed;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+
+  @include media($tablet) {
+    font-size: 0.5em;
+  }
+
+  @include media($desktop-large) {
+    font-size: 0.6em;
+  }
+}
+
+.content-primary {
+  height: 100%;
+  overflow: scroll;
+  padding: 4em 2em;
+  @include media($desktop) {
+    padding: 10em;
+  }
+}
+
+.hero {display:none;
+  font-family: $base-font-family;
+  font-size: 1em;
   font-weight: 100;
   left: 1.5em;
+  letter-spacing: 1px;
   opacity: 0.8;
-  position: relative;
+  position: absolute;
+  text-transform: uppercase;
   top: 45%;
 
-  @include media($tablet-down) {
-  	font-size: 2em;
+  @include media($tablet) {
+  	font-size: 1.5em;
   	left: 7%;
+    letter-spacing: 3px;
+  }
+
+  @include media($desktop) {
+    letter-spacing: 5px;
+  }
+
+  @include media($desktop-large) {
+    font-size: 2em;
   }
 }
 

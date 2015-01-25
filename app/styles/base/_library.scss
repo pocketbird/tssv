@@ -1,0 +1,21 @@
+// tumblr style overrides
+.tumblr_posts {
+  padding-left: 0;
+}
+
+.tumblr_post {
+  list-style: none;
+}
+
+.tumblr_post.tumblr_text_post:not(:first-child) {
+  .tumblr_title {
+    border-top: 1px solid $white;
+    margin-top: 2em;
+    padding-top: 2em;
+  }
+}
+
+.tumblr_title {
+  font-size: 2em;
+  padding-bottom: 0.5em;
+}

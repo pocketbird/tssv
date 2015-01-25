@@ -1,9 +1,9 @@
 // Typography
 $sans-serif: $helvetica;
 $serif: $georgia;
-$base-font-family: Amatic-Regular, $helvetica;
-$accent-font-family: Amatic-Regular, $helvetica;
-$header-font-family: $accent-font-family;
+$base-font-family: EratoLight-Regular, $helvetica;
+$accent-font-family: AngleciaProDisplay-Regular, $helvetica;
+$header-font-family: $base-font-family;
 
 // Sizes
 $base-value: 12px;
@@ -28,7 +28,7 @@ $white: #FFFFFF;
 $base-background-color: white;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $light-gray;
 $base-accent-color: $blue;
 
 // Link Colors
