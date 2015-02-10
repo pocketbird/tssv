@@ -5,10 +5,14 @@ $('.js-contact').hide();
 $('.js-tour').hide();
 
 $('.js-hero').click(function() {
+  $('.background').hide();
+  $('.background').removeClass('background-splash');
+  $('.background').addClass('background-primary');
+  $('.background').fadeIn(500);
   $('.js-header').css("display", "block");
   $('.js-header').hide();
   $('.js-content-primary').css("display", "block");
-  $('.js-hero').hide(1000);
+  $('.js-hero').hide();
   $('.js-header').fadeIn(2000);
   $('.js-about').show(1000);
 });
