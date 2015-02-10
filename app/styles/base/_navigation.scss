@@ -3,7 +3,7 @@
   height: 4em;
   padding: 1em;
   width: 100%;
-  @include background-opacity($medium-gray, 0.9);
+  @include background-opacity($nav-primary-bg, 0.9);
 
   @include media($desktop-large) {
     height: 4.2em;
@@ -37,7 +37,7 @@
       padding-top: 1em;
       position: relative;
       right: 0.5em;
-      @include background-opacity($base-link-color, 0.9);
+      @include background-opacity($nav-primary-bg, 0.9);
 
       &:first-child {
         padding-top: 0.3em;

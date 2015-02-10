@@ -31,6 +31,9 @@ $base-background-color: white;
 $base-font-color: $light-gray;
 $base-accent-color: $light-gray;
 
+// Navigation Colors
+$nav-primary-bg: $medium-gray;
+
 // Link Colors
 $base-link-color: $base-accent-color;
 $hover-link-color: darken($base-accent-color, 15);
