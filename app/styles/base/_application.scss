@@ -76,7 +76,7 @@ body, html {
   letter-spacing: 1px;
   opacity: 0.9;
   position: absolute;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   top: 45%;
 
   @include media($tablet) {
