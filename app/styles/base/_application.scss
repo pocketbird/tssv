@@ -32,11 +32,19 @@ body, html {
 }
 
 .background-splash {
-  background: url(../images/tssv4.jpg) no-repeat center center fixed;
+  background: url(../images/tssv6.jpg) no-repeat center center fixed;
+
+  @include media($desktop) {
+    background: url(../images/tssv4.jpg) no-repeat center center fixed;
+  }
 }
 
 .background-primary {
-  background: url(../images/tssv3-filter.jpeg) no-repeat center center fixed;
+  background: url(../images/tssv3-filter.jpeg) no-repeat right fixed;
+
+  @include media($tablet) {
+    background: url(../images/tssv3-filter.jpeg) no-repeat center center fixed;
+  }
 }
 
 .background {
@@ -77,7 +85,7 @@ body, html {
 }
 
 .hero {
-  color: $medium-gray;
+  color: $light-gray;
   font-family: $base-font-family;
   font-size: 1em;
   font-weight: 100;
@@ -85,11 +93,11 @@ body, html {
   letter-spacing: 1px;
   opacity: 0.9;
   position: absolute;
-  // text-transform: uppercase;
   top: 45%;
+  width: 100%;
 
   &:hover {
-    color: $light-gray;
+    color: $white;
   }
 
   @include media($tablet) {
@@ -99,7 +107,12 @@ body, html {
   }
 
   @include media($desktop) {
+    color: $medium-gray;
     letter-spacing: 5px;
+
+    &:hover {
+      color: $dark-gray;
+    }
   }
 
   @include media($desktop-large) {
