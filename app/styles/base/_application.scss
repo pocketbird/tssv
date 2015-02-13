@@ -32,7 +32,7 @@ body, html {
 }
 
 .background-splash {
-  background: url(../images/tssv6.jpg) no-repeat center center fixed;
+  background: url(../images/tssv3-filter.jpeg) no-repeat center center fixed;
 
   // @include media($desktop) {
     // background: url(../images/tssv4.jpg) no-repeat center center fixed;
@@ -87,7 +87,7 @@ body, html {
 .hero {
   color: $white;
   font-family: $base-font-family;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: 100;
   left: 1.5em;
   letter-spacing: 1px;
@@ -101,7 +101,7 @@ body, html {
   }
 
   @include media($tablet) {
-  	font-size: 1.5em;
+  	font-size: 2em;
   	left: 7%;
     letter-spacing: 3px;
   }
@@ -116,7 +116,7 @@ body, html {
   }
 
   @include media($desktop-large) {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 }
 

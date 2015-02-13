@@ -23,6 +23,10 @@
     }
   }
 
+  ul li.active {
+    border-bottom: 1px solid $white;
+  }
+
   // Dropdown
   ul ul {
     display: none;

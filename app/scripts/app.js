@@ -5,10 +5,10 @@ $('.js-contact').hide();
 $('.js-tour').hide();
 
 $('.js-hero').click(function() {
-  $('.background').hide();
-  $('.background').removeClass('background-splash');
-  $('.background').addClass('background-primary');
-  $('.background').fadeIn(500);
+  // $('.background').hide();
+  // $('.background').removeClass('background-splash');
+  // $('.background').addClass('background-primary');
+  // $('.background').fadeIn(500);
   $('.js-header').css("display", "block");
   $('.js-header').hide();
   $('.js-content-primary').css("display", "block");
@@ -22,6 +22,10 @@ $('.js-link-about').click(function() {
   $('.js-blog').hide(1000);
   $('.js-contact').hide(1000);
   $('.js-tour').hide(1000);
+
+  $('.js-li-about').addClass('active');
+  $('.js-li-contact').removeClass('active');
+  $('.js-li-tour').removeClass('active');
 });
 
 $('.js-link-blog').click(function() {
@@ -36,6 +40,10 @@ $('.js-link-contact').click(function() {
   $('.js-blog').hide(1000);
   $('.js-contact').show(1000);
   $('.js-tour').hide(1000);
+
+  $('.js-li-about').removeClass('active');
+  $('.js-li-contact').addClass('active');
+  $('.js-li-tour').removeClass('active');
 });
 
 $('.js-link-tour').click(function() {
@@ -43,4 +51,8 @@ $('.js-link-tour').click(function() {
   $('.js-blog').hide(1000);
   $('.js-contact').hide(1000);
   $('.js-tour').show(1000);
+
+  $('.js-li-about').removeClass('active');
+  $('.js-li-contact').removeClass('active');
+  $('.js-li-tour').addClass('active');
 });
