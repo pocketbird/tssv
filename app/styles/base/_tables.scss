@@ -1,8 +1,13 @@
 table {
   border-collapse: collapse;
+  font-size: 0.6em;
   margin: ($base-line-height / 2) 0;
   table-layout: fixed;
   width: 100%;
+
+  @include media($medium-screen) {
+    font-size: 1em;
+  }
 }
 
 th {
