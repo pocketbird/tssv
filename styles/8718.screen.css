@@ -809,14 +809,14 @@ html {
     width: 100%
 }
 .background-splash {
-    background: url(../images/tssv-wall1-web.jpeg) no-repeat center center fixed
+    background: url(../images/tssv-wall3-web-filter.jpeg) no-repeat center center fixed
 }
 .background-primary {
-    background: url(../images/tssv-wall1-web.jpeg) no-repeat right fixed
+    background: url(../images/tssv-wall3-web-filter.jpeg) no-repeat right fixed
 }
 @media screen and (min-width: 700px) {
     .background-primary {
-        background: url(../images/tssv-wall1-web.jpeg) no-repeat center center fixed
+        background: url(../images/tssv-wall3-web-filter.jpeg) no-repeat center center fixed
     }
 }
 .background {
