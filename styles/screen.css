@@ -859,7 +859,7 @@ html {
 .hero {
     color: #fff;
     font-family: EratoLight-Regular, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 1.25em;
+    font-size: .7em;
     font-weight: 100;
     left: 1.5em;
     letter-spacing: 1px;
@@ -871,6 +871,19 @@ html {
 .hero:hover {
     color: #ddd
 }
+
+@media screen and (min-width: 480px) {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 580px) {
+    font-size: 1.1em;
+}
+
+@media screen and (min-width: 650px) {
+    font-size: 1.25em;
+}
+
 @media screen and (min-width: 700px) {
     .hero {
         font-size: 2em;
