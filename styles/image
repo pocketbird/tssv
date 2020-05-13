@@ -809,14 +809,14 @@ html {
     width: 100%
 }
 .background-splash {
-    background: url(https://github.com/pocketbird/tssv/blob/gh-pages/images/IMG_8751.JPG) no-repeat center center fixed
+    background: url(../images/IMG_8751.JPG) no-repeat center center fixed
 }
 .background-primary {
-    background: url(https://github.com/pocketbird/tssv/blob/gh-pages/images/IMG_8751.JPG) no-repeat right fixed
+    background: url(../images/IMG_8751.JPG) no-repeat right fixed
 }
 @media screen and (min-width: 700px) {
     .background-primary {
-        background: url(https://github.com/pocketbird/tssv/blob/gh-pages/images/IMG_8751.JPG) no-repeat center center fixed
+        background: url(../images/IMG_8751.JPG) no-repeat center center fixed
     }
 }
 .background {
